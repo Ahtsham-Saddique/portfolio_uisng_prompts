@@ -2,112 +2,162 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>About | Portfolio</title>
-  <meta name="description" content="About Backend Django Developer">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Ahtsham Saddique - Frontend Developer</title>
+  <meta name="description" content="About Ahtsham Saddique - Frontend-Focused Web Developer specializing in HTML, CSS, JavaScript, Bootstrap, Python, Django.">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+  <div id="bg-animation-container"></div>
 
-<!-- Same Navbar as Home -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="index.html">MyPortfolio</a>
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div id="nav" class="collapse navbar-collapse">
-      <ul class="navbar-nav ms-auto align-items-center gap-2">
-        <li class="nav-item"><a class="nav-link nav-hover" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link nav-hover" href="projects.html">Projects</a></li>
-        <li class="nav-item">
-          <a class="btn btn-sm btn-outline-light px-3" href="contact.html">Contact</a>
-        </li>
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo-link">
+        <img src="assets/images/my-logo.png" alt="Ahtsham Saddique Logo" class="logo-img">
+      </a>
+      <button class="menu-toggle" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
       </ul>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<section class="container about-section">
-
-  <!-- About Header -->
-  <div class="text-center mb-5">
-    <h2 class="about-title">About Me</h2>
-    <p class="about-subtitle">
-      Frontend-Focused Web Developer crafting scalable and secure web applications
-    </p>
-  </div>
-
-  <div class="row g-5 align-items-center">
-
-    <!-- Profile Image -->
-    <div class="col-md-5 text-center">
-      <div class="about-profile-wrapper mx-auto">
-        <img src="assets/images/profile.png" alt="Profile Image">
+  <section id="about" class="section bg-alt reveal" style="padding-top: 120px;">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-image-wrapper">
+          <img src="assets/images/profile.png" alt="Ahtsham Saddique" class="about-img">
+        </div>
+        <div class="about-text">
+          <p>
+            I am a <strong>Frontend-Focused Web Developer</strong> who loves building clean, responsive, and user-friendly interfaces. I focus on turning designs into interactive, pixel-perfect web experiences that work smoothly across all devices and screen sizes.
+          </p>
+          <p>
+            I enjoy crafting modern UIs using HTML, CSS, Bootstrap, and JavaScript, with attention to layout, spacing, accessibility, and performance. Alongside frontend work, I have practical experience integrating frontend interfaces with backend logic, databases, and APIs using Python and Django, which helps me build complete, real-world applications.
+          </p>
+          <p>
+            I am fluent in English and Urdu, with a basic command of Arabic, enabling me to collaborate effectively with both local and international clients.
+          </p>
+        </div>
       </div>
     </div>
+  </section>
 
-    <!-- About Content -->
-    <div class="col-md-7 about-content">
-      <p>
-        I am a <strong> Frontend-Focused Web Developer</strong> who loves building clean, responsive, and user-friendly interfaces. I focus on turning designs into interactive, pixel-perfect web experiences that work smoothly across all devices and screen sizes
-      </p>
-
-      <p>I enjoy crafting modern UIs using HTML, CSS, Bootstrap, and JavaScript, with attention to layout, spacing, accessibility, and performance. Alongside frontend work, I have practical experience integrating frontend interfaces with backend logic, databases, and APIs using Python and Django, which helps me build complete, real-world applications.
-      </p>
-
-      <p>
-
-        I enjoy crafting modern UIs using HTML, CSS, Bootstrap, and JavaScript, with attention to layout, spacing, accessibility, and performance. Alongside frontend work, I have practical experience integrating frontend interfaces with backend logic, databases, and APIs using Python and Django, which helps me build complete, real-world applications.
-      </p>
-    </div>
-  </div>
-
-  <!-- Skills Section -->
-  <div class="row g-4 mt-5">
-    
-    <h1 style="font-size: 3rem; font-weight: 800; text-transform: uppercase; color: #111827; border-bottom: 4px solid #0d6efd; display: inline-block; padding-bottom: 6px; margin-bottom: 30px;">
-        Skills
-      </h1>
-
-    <div class="col-md-3">
-      <div class="glass-card skill-card text-center">
-        <h5>Backend</h5>
-        <span>Python · Django</span>
+  <section id="skills" class="section reveal">
+    <div class="container">
+      <div class="skills-wrapper">
+        <div class="skills-sidebar">
+          <span class="vertical-text">Skills</span>
+          <div class="vertical-line"></div>
+        </div>
+        <div class="skills-main">
+          <div class="section-header">
+            <h2 class="section-title-custom text-left">My Technical Toolkit</h2>
+            <p class="text-left">
+              I specialize in building high-performance web applications and efficient digital systems. Here are the core technologies and tools I use to bring ideas to life.
+            </p>
+          </div>
+          <h3 class="skill-group-title">Frontend</h3>
+          <div class="skills-icons-grid">
+            <div class="skill-card">
+              <i class="fa-brands fa-html5 icon-html"></i>
+              <span>HTML5</span>
+            </div>
+            <div class="skill-card">
+              <i class="fa-brands fa-css3-alt icon-css"></i>
+              <span>CSS3</span>
+            </div>
+            <div class="skill-card">
+              <i class="fa-brands fa-js icon-js"></i>
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-card">
+              <i class="fa-brands fa-bootstrap icon-bootstrap"></i>
+              <span>Bootstrap</span>
+            </div>
+          </div>
+          <h3 class="skill-group-title">Backend</h3>
+          <div class="skills-icons-grid">
+            <div class="skill-card">
+              <i class="fa-brands fa-python icon-pycharm"></i>
+              <span>Python</span>
+            </div>
+            <div class="skill-card">
+              <i class="fa-solid fa-database icon-sql"></i>
+              <span>Django</span>
+            </div>
+            <div class="skill-card">
+              <i class="fa-solid fa-server icon-eclipse"></i>
+              <span>MySQL</span>
+            </div>
+            <div class="skill-card">
+              <i class="fa-solid fa-database icon-sql"></i>
+              <span>SQLite</span>
+            </div>
+          </div>
+          <h3 class="skill-group-title">Tools & Others</h3>
+          <div class="skills-icons-grid">
+            <div class="skill-card">
+              <i class="fa-brands fa-git-alt icon-git"></i>
+              <span>Git</span>
+            </div>
+            <div class="skill-card">
+              <i class="fa-brands fa-github icon-git"></i>
+              <span>GitHub</span>
+            </div>
+            <div class="skill-card">
+              <i class="fa-solid fa-code icon-vscode"></i>
+              <span>VS Code</span>
+            </div>
+            <div class="skill-card">
+              <i class="fa-brands fa-php icon-php"></i>
+              <span>PHP</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+  </section>
 
-    <div class="col-md-3">
-      <div class="glass-card skill-card text-center">
-        <h5>Frontend</h5>
-        <span>HTML · CSS ·Javascript · Bootstrap</span>
+  <footer class="footer-enhanced">
+    <div class="fire-container">
+      <canvas id="fireCanvas"></canvas>
+    </div>
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ahtsham Saddique | Crafted with <i class="fa-solid fa-heart"></i></p>
       </div>
     </div>
+  </footer>
 
-    <div class="col-md-3">
-      <div class="glass-card skill-card text-center">
-        <h5>Databases</h5>
-        <span>MySQL · SQLite</span>
-      </div>
-    </div>
+  <a href="https://wa.me/923556313892" class="whatsapp-sticky" target="_blank" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
 
-    <div class="col-md-3">
-      <div class="glass-card skill-card text-center">
-        <h5>Tools</h5>
-        <span>Git · GitHub · VS Code</span>
-      </div>
-    </div>
-
-  </div>
-
-</section>
-
-<footer>
-  © 2026 Ahtsham Saddique
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

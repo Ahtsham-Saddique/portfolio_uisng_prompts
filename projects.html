@@ -2,142 +2,143 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Projects | Portfolio</title>
-  <meta name="description" content="Django Backend Projects">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Ahtsham Saddique - Frontend Developer</title>
+  <meta name="description" content="Projects by Ahtsham Saddique - Frontend-Focused Web Developer. Check out my portfolio of web applications and games.">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+  <div id="bg-animation-container"></div>
 
-
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="index.html">MyPortfolio</a>
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div id="nav" class="collapse navbar-collapse">
-      <ul class="navbar-nav ms-auto align-items-center gap-2">
-        <li class="nav-item"><a class="nav-link nav-hover" href="index.html">Home</a></li>
-        
-        <li class="nav-item"><a class="nav-link nav-hover" href="about.html">About</a></li>
-        <li class="nav-item">
-          <a class="btn btn-sm btn-outline-light px-3" href="contact.html">Contact</a>
-        </li>
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo-link">
+        <img src="assets/images/my-logo.png" alt="Ahtsham Saddique Logo" class="logo-img">
+      </a>
+      <button class="menu-toggle" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
       </ul>
-    </div>                       
-  </div>
-</nav>
+    </div>
+  </nav>
 
-<section class="container" style="margin-top:120px">
-  
-
-  <div class="row g-4">
-    <h2 class="projects-title text-center mb-5">Projects</h2>
-
-
-    <!-- Project 1 -->
-    <div class="col-md-6 col-lg-3">
-      <div class="glass-card">
-        <img src="assets/images/project1.png" class="img-fluid project-img mb-3" alt="">
-        <h5>Currency-Converter-App</h5>
-        <p>Real-time currency conversion with responsive UI. Fetches live currency data via API.
-
-</p>
-        <p><small>
-            HTML5 (semantic structure)
-
-            CSS3 (layouts, responsive design)
-
-            JavaScript (DOM manipulation, events, API fetch, real-time conversion logic)
-
-          Bootstrap 5 (grid & responsive layout)
-
-
-        </small></p>
-        <a href="https://ahtsham-saddique.github.io/js-currency-convertor/" class="btn btn-sm btn-accent">Live</a>
-        <a href="https://github.com/ahtsham-saddique/js-currency-convertor" class="btn btn-sm btn-outline-light">GitHub</a>
+  <section id="projects" class="section reveal" style="padding-top: 120px;">
+    <div class="container">
+      <div class="section-header center-text">
+        <span class="section-subtitle">CASE STUDIES</span>
+        <h2 class="section-title-custom">Featured Work</h2>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-img-container">
+            <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Currency Converter">
+          </div>
+          <div class="project-content">
+            <div class="project-category"><i class="fa-solid fa-money-bill-transfer"></i> Web App</div>
+            <h3>Currency Converter App</h3>
+            <p>Real-time currency conversion with responsive UI. Fetches live currency data via API with clean and intuitive interface.</p>
+            <div class="project-tech">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Bootstrap 5</span><span>API</span>
+            </div>
+            <div class="project-links">
+              <a href="https://ahtsham-saddique.github.io/js-currency-convertor/" target="_blank" class="btn-link">View Live <i class="fa-solid fa-external-link"></i></a>
+              <a href="https://github.com/ahtsham-saddique/js-currency-convertor" target="_blank" class="btn-link">GitHub <i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img-container">
+            <img src="https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tic Tac Toe">
+          </div>
+          <div class="project-content">
+            <div class="project-category"><i class="fa-solid fa-gamepad"></i> Game</div>
+            <h3>Tic Tac Toe Game</h3>
+            <p>Interactive Tic Tac Toe game with winner detection, reset functionality, and turn management. Play against computer.</p>
+            <div class="project-tech">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Bootstrap 5</span>
+            </div>
+            <div class="project-links">
+              <a href="https://ahtsham-saddique.github.io/js-tic-tac-toe/" target="_blank" class="btn-link">View Live <i class="fa-solid fa-external-link"></i></a>
+              <a href="https://github.com/ahtsham-saddique/js-tic-tac-toe" target="_blank" class="btn-link">GitHub <i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img-container">
+            <img src="https://images.unsplash.com/photo-1614680376593-902f74cf0d41?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Rock Paper Scissors">
+          </div>
+          <div class="project-content">
+            <div class="project-category"><i class="fa-solid fa-hand-scissors"></i> Game</div>
+            <h3>Rock Paper Scissors</h3>
+            <p>Play against computer with score tracking and replay functionality. Features clean UI with smooth animations.</p>
+            <div class="project-tech">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Bootstrap 5</span>
+            </div>
+            <div class="project-links">
+              <a href="https://ahtsham-saddique.github.io/js-rock-paper-scissors/" target="_blank" class="btn-link">View Live <i class="fa-solid fa-external-link"></i></a>
+              <a href="https://github.com/ahtsham-saddique/js-rock-paper-scissors" target="_blank" class="btn-link">GitHub <i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img-container">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Portfolio Website">
+          </div>
+          <div class="project-content">
+            <div class="project-category"><i class="fa-solid fa-user"></i> Portfolio</div>
+            <h3>Portfolio Website</h3>
+            <p>Responsive developer portfolio with modern design, smooth animations, and clean user interface.</p>
+            <div class="project-tech">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Bootstrap 5</span>
+            </div>
+            <div class="project-links">
+              <a href="https://ahtsham-saddique.github.io/my_portfolio/" target="_blank" class="btn-link">View Live <i class="fa-solid fa-external-link"></i></a>
+              <a href="https://github.com/ahtsham-saddique/my_portfolio" target="_blank" class="btn-link">GitHub <i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+  </section>
 
-    <!-- Project 2 -->
-    <div class="col-md-6 col-lg-3">
-      <div class="glass-card">
-        <img src="assets/images/project2.png" class="img-fluid project-img mb-3" alt="">
-        <h5>Tic Tac Toe game</h5>
-        <p>Interactive Tic Tac Toe game with winner detection, reset, and turn management.
-
-</p>
-        <p><small>HTML5 & CSS3 (layout, animations)
-
-        JavaScript (arrays/matrices, game logic, events)
-
-        Bootstrap 5 (responsive layout)
-
-      UI/UX design (interactive, user-friendly interface)</small></p>
-        <a href="//ahtsham-saddique.github.io/js-tic-tac-toe/
-          " class="btn btn-sm btn-accent">Live</a>
-        <a href="//github.com/ahtsham-saddique/js-tic-tac-toe" class="btn btn-sm btn-outline-light">GitHub</a>
+  <footer class="footer-enhanced">
+    <div class="fire-container">
+      <canvas id="fireCanvas"></canvas>
+    </div>
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ahtsham Saddique | Crafted with <i class="fa-solid fa-heart"></i></p>
       </div>
     </div>
+  </footer>
 
-    <!-- Project 3 -->
-    <div class="col-md-6 col-lg-3">
-      <div class="glass-card">
-        <img src="assets/images/project3.png" class="img-fluid project-img mb-3" alt="">
-        <h5>Rock-paper-scissors</h5>
-        <p>Play against computer with score tracking and replay functionality.</p>
-        <p><small>
-          HTML5 & CSS3 (structure & styling)
+  <a href="https://wa.me/923556313892" class="whatsapp-sticky" target="_blank" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
 
-          JavaScript (game logic, random number generation, score tracking)
-
-          Bootstrap 5 (responsive layout)
-
-          UI/UX design (quick gameplay, visual feedback)</small></p>
-        <a href="https://ahtsham-saddique.github.io/js-rock-paper-scissors/
-    " class="btn btn-sm btn-accent">Live</a>
-        <a href="https://github.com/ahtsham-saddique/js-rock-paper-scissors" class="btn btn-sm btn-outline-light">GitHub</a>
-      </div>
-    </div>
-
-    <!-- Project 4 -->
-    <div class="col-md-6 col-lg-3">
-      <div class="glass-card">
-        <img src="assets/images/project4.png" class="img-fluid project-img mb-3" alt="">
-        
-       
-         <h5>Portfolio Website</h5>
-        <p>Responsive developer portfolio.</p>
-        <p><small>
-
-          
-
-        
-        HTML5 (semantic structure, multiple pages)•
-
-        CSS3 (modern color palette, hover effects, typography, spacing)•
-
-      JavaScript (smooth scrolling, animations, responsive interactivity)•
-
-      Bootstrap 5 (grid system, navbar, cards)•
-        </small></p>
-        <a href="https://ahtsham-saddique.github.io/my_portfolio/
-" class="btn btn-sm btn-accent">Live</a>
-        <a href="//github.com/ahtsham-saddique/my_portfolio
-" class="btn btn-sm btn-outline-light">GitHub</a>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<footer>
-  © 2026 Ahtsham Saddique
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

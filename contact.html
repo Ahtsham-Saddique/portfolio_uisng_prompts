@@ -2,72 +2,132 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Contact | Portfolio</title>
-  <meta name="description" content="Contact Frontend Developer">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Ahtsham Saddique - Frontend Developer</title>
+  <meta name="description" content="Contact Ahtsham Saddique - Frontend-Focused Web Developer. Get in touch for web development projects.">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+  <div id="bg-animation-container"></div>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="index.html">MyPortfolio</a>
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div id="nav" class="collapse navbar-collapse">
-      <ul class="navbar-nav ms-auto align-items-center gap-2">
-        <li class="nav-item"><a class="nav-link nav-hover" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link nav-hover" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link nav-hover" href="projects.html">Projects</a></li>
-        <li class="nav-item">
-          <a class="btn btn-sm btn-outline-light px-3" href="contact.html">Contact</a>
-        </li>
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo-link">
+        <img src="assets/images/my-logo.png" alt="Ahtsham Saddique Logo" class="logo-img">
+      </a>
+      <button class="menu-toggle" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
       </ul>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<!-- Contact Section -->
-<section class="container contact-section" style="margin-top:120px; max-width:600px;">
-  <h2 class="text-center mb-4" style="font-weight:800; font-size:2.5rem; background: linear-gradient(135deg, #00f5ff, #7f5cff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; position: relative;">
-    Contact Me
-  </h2>
-
-  <!-- Form -->
-  <form class="glass-card p-4">
-    <div class="mb-3">
-      <input type="text" class="form-control form-control-lg" placeholder="Your Name" required>
+  <section id="contact" class="section bg-alt" style="padding-top: 120px;">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fa-solid fa-user"></i>
+            <div>
+              <h4>Personal Information</h4>
+              <p>Ahtsham Saddique</p>
+              <p>Frontend-Focused Web Developer</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <h4>Phone</h4>
+              <p><a href="tel:+923556313892">+92 355 6313892</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:ahtshamsaddique@example.com">ahtshamsaddique@example.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-location-arrow"></i>
+            <div>
+              <h4>Location</h4>
+              <p>Pakistan</p>
+            </div>
+          </div>
+          <div class="contact-actions">
+            <a href="#" class="btn btn-primary">
+              <i class="fa-solid fa-file-pdf"></i> Download CV (PDF)
+            </a>
+          </div>
+          <div class="social-links">
+            <a href="https://linkedin.com/in/ahtsham-saddique" aria-label="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/ahtsham-saddique" aria-label="GitHub" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://wa.me/923556313892" aria-label="WhatsApp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <form id="whatsapp-contact-form" class="contact-form" data-netlify="true">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What is this about?" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="How can I help you?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
     </div>
-    <div class="mb-3">
-      <input type="email" class="form-control form-control-lg" placeholder="Email Address" required>
+  </section>
+
+  <footer class="footer-enhanced">
+    <div class="fire-container">
+      <canvas id="fireCanvas"></canvas>
     </div>
-    <div class="mb-3">
-      <textarea class="form-control form-control-lg" rows="5" placeholder="Message" required></textarea>
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ahtsham Saddique | Crafted with <i class="fa-solid fa-heart"></i></p>
+      </div>
     </div>
-    <button type="submit" class="btn btn-accent w-100 btn-lg">Send Message</button>
-  </form>
+  </footer>
 
-  <!-- Social Links -->
-  <div class="text-center mt-4">
-    <a href="https://github.com/ahtsham-saddique" target="_blank" class="me-3 text-decoration-none" style="color:#00f5ff;">GitHub</a>
-    <a href="https://linkedin.com/in/ahtsham-saddique" target="_blank" class="me-3 text-decoration-none" style="color:#00f5ff;">LinkedIn</a>
-    <a href="https://wa.me/923556313892" target="_blank" id="whatsappBtn" class="me-3 text-decoration-none" style="color:#00f5ff;">Wattsapp</a>
-  </div>
-</section>
+  <a href="https://wa.me/923556313892" class="whatsapp-sticky" target="_blank" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
 
-<!-- WhatsApp Floating Button -->
-
-  
-</a>
-
-<footer>
-  © 2026 Ahtsham Saddique
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
