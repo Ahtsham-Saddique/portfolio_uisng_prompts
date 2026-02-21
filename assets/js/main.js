@@ -1,13 +1,20 @@
 // =====================
-// Mobile Menu Toggle
+// Mobile Menu Toggle with Overlay
 // =====================
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinksContainer = document.querySelector('.nav-links');
+
+// Create overlay element dynamically
+const navOverlay = document.createElement('div');
+navOverlay.className = 'nav-overlay';
+document.body.appendChild(navOverlay);
 
 if (menuToggle) {
   menuToggle.addEventListener('click', () => {
     navLinksContainer.classList.toggle('active');
     menuToggle.classList.toggle('active');
+    navOverlay.classList.toggle('active');
+    document.body.style.overflow = navLinksContainer.classList.contains('active') ? 'hidden' : '';
   });
   
   // Close menu when clicking on a link
@@ -15,7 +22,17 @@ if (menuToggle) {
     link.addEventListener('click', () => {
       navLinksContainer.classList.remove('active');
       menuToggle.classList.remove('active');
+      navOverlay.classList.remove('active');
+      document.body.style.overflow = '';
     });
+  });
+  
+  // Close menu when clicking on overlay
+  navOverlay.addEventListener('click', () => {
+    navLinksContainer.classList.remove('active');
+    menuToggle.classList.remove('active');
+    navOverlay.classList.remove('active');
+    document.body.style.overflow = '';
   });
 }
 
@@ -113,15 +130,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // =====================
-// Navbar Background on Scroll
+// Navbar Scroll Effects - Senior Developer Design
 // =====================
 window.addEventListener('scroll', () => {
   const navbar = document.querySelector('.navbar');
   if (navbar) {
     if (window.scrollY > 50) {
-      navbar.style.background = 'rgba(13, 17, 23, 0.98)';
+      navbar.classList.add('scrolled');
     } else {
-      navbar.style.background = '';
+      navbar.classList.remove('scrolled');
     }
   }
 });
