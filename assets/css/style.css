@@ -1609,7 +1609,13 @@ img {
   }
 
   .hero-visual {
-    display: none;
+    margin-top: 40px;
+    order: 2;
+  }
+
+  .hero-img-box {
+    width: 280px;
+    height: 280px;
   }
 
   .about-content {
@@ -1640,7 +1646,7 @@ img {
 
 @media (max-width: 768px) {
   .nav-links {
-    display: none;
+    /* Fixed mobile menu handled above, removing conflicting display:none */
   }
 
   .menu-toggle {
