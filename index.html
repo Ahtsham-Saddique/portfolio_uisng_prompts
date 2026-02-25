@@ -6,9 +6,25 @@
   <title>Ahtsham Saddique | Frontend Web Developer</title>
   <meta name="description" content="Portfolio of Ahtsham Saddique - Frontend-Focused Web Developer specializing in HTML, CSS, JavaScript, Bootstrap, Python, Django, and more.">
 
-  <!-- Fonts -->
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Ahtsham Saddique | Frontend Web Developer">
+  <meta property="og:description" content="Frontend-Focused Web Developer specializing in HTML, CSS, JavaScript, Bootstrap, Python, Django.">
+  <meta property="og:image" content="https://ahtsham-saddique.github.io/my_portfolio/assets/images/profile.png">
+  <meta property="og:url" content="https://ahtsham-saddique.github.io/my_portfolio/">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ahtsham Saddique | Frontend Web Developer">
+  <meta name="twitter:description" content="Frontend-Focused Web Developer specializing in HTML, CSS, JavaScript, Bootstrap, Python, Django.">
+  <meta name="twitter:image" content="https://ahtsham-saddique.github.io/my_portfolio/assets/images/profile.png">
+
+  <!-- Preconnect for Performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Icons -->
@@ -19,8 +35,32 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ahtsham Saddique",
+    "url": "https://ahtsham-saddique.github.io/my_portfolio/",
+    "jobTitle": "Frontend-Focused Web Developer",
+    "description": "Frontend-Focused Web Developer specializing in HTML, CSS, JavaScript, Bootstrap, Python, Django",
+    "sameAs": ["https://linkedin.com/in/ahtsham-saddique", "https://github.com/ahtsham-saddique"],
+    "email": "ahtshamsaddique55@gmail.com",
+    "telephone": "+92-355-6313892",
+    "knowsAbout": ["HTML", "CSS", "JavaScript", "Bootstrap", "Python", "Django", "MySQL", "Git"]
+  }
+  </script>
 </head>
 <body>
+  <!-- Skip to Content Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress" aria-hidden="true">
+    <div class="scroll-progress-bar"></div>
+  </div>
+
   <div id="bg-animation-container"></div>
 
   <nav class="navbar">
@@ -47,21 +87,21 @@
   <header id="home" class="hero">
     <div  class="container">
       <div class="hero-content">
-        <span class="greeting">Hello, I'm</span>
-        <h1 class="name">Ahtsham Saddique</h1>
-        <h2 class="title">Frontend-Focused Web Developer</h2>
-        <p class="tagline">Frontend- Focused Web Developer | HTML • CSS • JavaScript • Bootstrap • Python • Django | Building clean, responsive, and user-friendly interfaces</p>
-        <div class="hero-btns">
+        <span class="greeting reveal" style="transition-delay: 0.1s;">Hello, I'm</span>
+        <h1 class="name reveal" style="transition-delay: 0.2s;">Ahtsham Saddique</h1>
+        <h2 class="title reveal" style="transition-delay: 0.3s;">Frontend-Focused Web Developer</h2>
+        <p class="tagline reveal" style="transition-delay: 0.4s;">Frontend- Focused Web Developer | HTML • CSS • JavaScript • Bootstrap • Python • Django | Building clean, responsive, and user-friendly interfaces</p>
+        <div class="hero-btns reveal" style="transition-delay: 0.5s;">
           <a href="#projects" class="btn btn-primary">View Projects</a>
           <a href="#contact" class="btn btn-outline">Hire Me</a>
         </div>
-        <div class="hero-socials">
+        <div class="hero-socials reveal" style="transition-delay: 0.6s;">
           <a href="https://linkedin.com/in/ahtsham-saddique" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
           <a href="https://github.com/ahtsham-saddique" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
           <a href="https://wa.me/923556313892" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
       </div>
-      <div class="hero-visual">
+      <div class="hero-visual reveal" style="transition-delay: 0.7s;">
         <div class="hero-img-box">
           <img src="assets/images/profile.png" alt="Ahtsham Saddique">
         </div>
@@ -437,7 +477,7 @@
             <a href="https://wa.me/923556313892" aria-label="WhatsApp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
           </div>
         </div>
-        <form id="whatsapp-contact-form" class="contact-form" action="https://formspree.io/f/ahtshamsaddique@gmail.com" method="POST">
+        <form id="whatsapp-contact-form" class="contact-form" action="https://formspree.io/f/ahtshamsaddique55@gmail.com" method="POST">
           <div class="form-group">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" placeholder="Your Name" required>
