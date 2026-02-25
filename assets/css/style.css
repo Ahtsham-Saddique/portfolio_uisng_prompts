@@ -1646,7 +1646,8 @@ img {
 
 @media (max-width: 768px) {
   .nav-links {
-    /* Fixed mobile menu handled above, removing conflicting display:none */
+    /* Fixed mobile menu handled above */
+    display: contents; /* Ensure it doesn't break parent layout while being functionally 'transparent' in this specific MQ context */
   }
 
   .menu-toggle {

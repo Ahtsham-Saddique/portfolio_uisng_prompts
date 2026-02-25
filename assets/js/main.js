@@ -13,7 +13,7 @@
     scrollBtn: document.getElementById("scrollTop"),
     contactForm: document.querySelector("#whatsapp-contact-form"),
     revealElements: document.querySelectorAll(".reveal"),
-    sections: document.querySelectorAll("section[id]"),
+    sections: document.querySelectorAll("section[id], header[id]"),
     timeline: document.querySelector(".timeline"),
     bgContainer: document.getElementById("bg-animation-container"),
     fireCanvas: document.getElementById("fireCanvas"),
@@ -108,20 +108,24 @@
   };
 
   const highlightNavOnScroll = (scrollY) => {
-    DOM.sections.forEach((section) => {
-      const sectionHeight = section.offsetHeight;
-      const sectionTop = section.offsetTop - 120;
-      const sectionId = section.getAttribute("id");
+    let currentSection = "";
 
-      if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-        DOM.navItems.forEach((link) => {
-          link.classList.remove("active");
-          if (link.getAttribute("href") === "#" + sectionId) {
-            link.classList.add("active");
-          }
-        });
+    DOM.sections.forEach((section) => {
+      const sectionTop = section.offsetTop - 150;
+      const sectionHeight = section.offsetHeight;
+      if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+        currentSection = section.getAttribute("id");
       }
     });
+
+    if (currentSection) {
+      DOM.navItems.forEach((link) => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === "#" + currentSection) {
+          link.classList.add("active");
+        }
+      });
+    }
   };
 
   const animateTimeline = () => {
