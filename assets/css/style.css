@@ -1646,8 +1646,7 @@ img {
 
 @media (max-width: 768px) {
   .nav-links {
-    /* Fixed mobile menu handled above */
-    display: contents; /* Ensure it doesn't break parent layout while being functionally 'transparent' in this specific MQ context */
+    /* Mobile styles are already defined earlier in the file around line 380 */
   }
 
   .menu-toggle {
@@ -1682,6 +1681,7 @@ img {
   .footer-social-icons {
     justify-content: center;
   }
+}
 }
 
 @media (max-width: 480px) {
